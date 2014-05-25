@@ -1,0 +1,45 @@
+<div ng-include="'partials/navbar'"></div>
+
+
+<div class="row">
+	<div id="userList" class="col-md-3">
+		<div id="InnerUserList">
+			<div ng-repeat="user in users">
+				<div class="user" ng-click="doClickUser(user)">
+					{{user}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div  id="outerChatBox" class="col-md-9">
+
+		<div id="chatBox">
+			<div id="InnerChatBox">
+
+				<div ng-repeat="chat in chatList">
+					<div class="chat">
+						<p><b>{{chat.name}}</b></p>
+						<!-- http://www.anujgakhar.com/2013/06/15/duplicates-in-a-repeater-are-not-allowed-in-angularjs/ -->
+						<div ng-repeat="chatMessage in chat.message track by $index">
+							<p>{{chatMessage}}</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="chatInput">
+			<form ng-submit="submitted()">
+				<input type="text" ng-model="message" id="chatInputForm" class="form-control" placeholder="write a reply...">
+			</form>
+		</div>
+
+	</div>
+</div>
+
+
+
+<div class="footer">
+  <p>♥ from the Yeoman team</p>
+</div>

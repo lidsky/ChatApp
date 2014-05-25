@@ -89,3 +89,64 @@ body {
         border-bottom: 0;
     }
 }
+
+#userList {
+    height: 500px;
+    border-style: solid;
+    border-color: black;
+    overflow: auto;
+}
+
+
+#InnerUserList {
+    height: 900px;
+}
+
+#outerChatBox {
+    height: 500px;
+    border-style: solid;
+    border-color: black;
+    border-left: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: bottom;
+    display: table-cell;
+
+}
+
+
+#chatBox {
+    height: 440px;
+    border-bottom: 3px solid;
+    overflow: auto;
+
+}
+
+#InnerChatBox {
+    // max-height: 900px;
+}
+
+.user {
+    padding: 15px;
+    border-bottom: 1px solid;
+}
+
+.user:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.chat {
+    padding-left: 15px;
+}
+
+#chatInputForm {
+    height: 54px;
+
+}
+
+
+
+

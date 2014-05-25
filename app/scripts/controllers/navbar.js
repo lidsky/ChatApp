@@ -6,6 +6,9 @@ angular.module('chatAppApp')
       'title': 'Home',
       'link': '/'
     }, {
+      'title': 'Chat',
+      'link': '/chat'
+    }, {
       'title': 'Settings',
       'link': '/settings'
     }];
