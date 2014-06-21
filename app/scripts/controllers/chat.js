@@ -32,7 +32,7 @@ angular.module('chatAppApp')
     	} else {
     		$scope.chatList.push({name: currentUser, message: [$scope.message]});
     	}
-      // rearrange $scope.users to last messaged user appears the top most of the list 
+      // last messaged user appears the top most of the list 
       for (var i in chatData) {
         if (chatData[i] === $scope.chatList){
           var tempIndex = $scope.users.indexOf(i);
@@ -43,7 +43,7 @@ angular.module('chatAppApp')
     	$scope.message = '';
     };
 
-    //change message box to clicked user
+    //change chat box to clicked user
     $scope.doClickUser = function(user) {
       $scope.chatList = chatData[user];
     };
